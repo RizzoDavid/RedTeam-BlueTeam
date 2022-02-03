@@ -28,5 +28,25 @@ Steps to set up:
 - Determine capstone ip
   - First find kali ip
     - ```ifconfig```
-    - ```192.168.1.90```
-    - 
+    - 192.168.1.90
+  - Run nmap against 192.168.1.1/24 
+    - ```nmap 192.168.1.1/24```
+    - Did not give enough information to determine what machine is which
+    - ```nmap -sV 192.168.1.1/24```
+      - 192.168.1.100 
+        - Elastic Search | Ubuntu
+      - 192.168.1.105
+        - Apache | Ubuntu
+  - Open http://192.168.1.105
+    - Try to find "secret" page
+      - ```dirb http://192.168.1.105```
+        - Returned
+          - http://192.168.1.105/server-status
+            - Access Forbidden
+          - http://192.168.1.105/webdav
+            - Username:Password Protected
+      - ```dirb http://192.168.1.105/company_folders```
+        - Returned 0
+      - Scrolled through pages
+        - Error file missing please refer to company_folders/secret_folder
+        - /img/web4.png
