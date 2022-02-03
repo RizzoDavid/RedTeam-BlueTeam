@@ -91,4 +91,5 @@ Steps to set up:
   - ```cd /```
   - ```ls```
   - ```cat flag.txt```
-   ![](Img/flag.txt)
+  
+     ![](Img/flag.txt)
