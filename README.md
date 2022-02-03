@@ -23,3 +23,10 @@ Steps to set up:
  - ```systemdtl restart metricbeat```
  - ```systemctl restart packetbeat```
   
+
+### Attacking Capstone
+- Determine capstone ip
+  - First find kali ip
+    - ```ifconfig```
+    - ```192.168.1.90```
+    - 
