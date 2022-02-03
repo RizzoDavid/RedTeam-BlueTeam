@@ -32,11 +32,13 @@ Steps to set up:
   - Run nmap against 192.168.1.1/24 
     - ```nmap 192.168.1.1/24```
     - Did not give enough information to determine what machine is which
+    - ![](Img/nmap1.png)
     - ```nmap -sV 192.168.1.1/24```
       - 192.168.1.100 
         - Elastic Search | Ubuntu
       - 192.168.1.105
         - Apache | Ubuntu
+      - ![](Img/nmap2.png)
   - Open http://192.168.1.105
     - Try to find "secret" page
       - ```dirb http://192.168.1.105```
