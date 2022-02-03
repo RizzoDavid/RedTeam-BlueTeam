@@ -12,4 +12,4 @@ Need to set up beats in order to log the attacks.
 
 Steps to set up:
  - Log into Capstone
-   - ''' vagrant:tnargav '''
+   - ```vagrant:tnargav```
