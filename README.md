@@ -1,2 +1,6 @@
-# RedTeam-BlueTeam
-Project 2 Read Team vs Blue Team
+# Project 2
+## RedTeam vs. BlueTeam
+
+
+### Devices
+
