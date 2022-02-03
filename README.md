@@ -39,16 +39,16 @@ Steps to set up:
       - 192.168.1.105
         - Apache | Ubuntu
       - ![](Img/nmap2.png)
-  - Open http://192.168.1.105
-    - Try to find "secret" page
-      - ```dirb http://192.168.1.105```
-        - Returned
-          - http://192.168.1.105/server-status
-            - Access Forbidden
-          - http://192.168.1.105/webdav
-            - Username:Password Protected
-      - ```dirb http://192.168.1.105/company_folders```
-        - Returned 0
-      - Scrolled through pages
-        - Error file missing please refer to company_folders/secret_folder
+- Open http://192.168.1.105
+  - Try to find "secret" page
+    - ```dirb http://192.168.1.105```
+      - Returned
+        - http://192.168.1.105/server-status
+          - Access Forbidden
+        - http://192.168.1.105/webdav
+          - Username:Password Protected
+    - ```dirb http://192.168.1.105/company_folders```
+      - Returned 0
+    - Scrolled through pages
+      - Error file missing please refer to company_folders/secret_folder
          ![](/Img/web4.png)
