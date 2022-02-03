@@ -49,4 +49,4 @@ Steps to set up:
         - Returned 0
       - Scrolled through pages
         - Error file missing please refer to company_folders/secret_folder
-         ![](/img/web4.png)
+         ![](/Img/web4.png)
